@@ -1,0 +1,9 @@
+.block-17 form .fields .one-third {
+    width: 100% !important;
+}
+
+.map {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+}
