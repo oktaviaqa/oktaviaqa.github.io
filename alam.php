@@ -1,3 +1,9 @@
+<?php 
+require 'functions.php';
+$alam = query("SELECT * FROM db_alam");;
+
+?> 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -55,11 +61,11 @@
               class="dropdown-menu dropdown-menu-dark"
               aria-labelledby="navbarDarkDropdownMenuLink"
             >
-              <li><a class="dropdown-item" href="alam.php">Wisata Alam</a></li>
-              <li><a class="dropdown-item" href="alam.php">Wisata Religi</a></li>
-              <li><a class="dropdown-item" href="alam.php">Wisata Sejarah</a></li>
-              <li><a class="dropdown-item" href="alam.php">Wisata Keluarga</a></li>
-              <li><a class="dropdown-item" href="alam.php">Wisata Kuliner</a></li>
+			 <li><a class="dropdown-item" href="alam.php">Wisata Alam</a></li>
+              <li><a class="dropdown-item" href="religi.php">Wisata Religi</a></li>
+              <li><a class="dropdown-item" href="sejarah.php">Wisata Sejarah</a></li>
+              <li><a class="dropdown-item" href="keluarga.php">Wisata Keluarga</a></li>
+              <li><a class="dropdown-item" href="oleholeh.php">Pusat Oleh-oleh</a></li>
             </ul>
           </li>
 					<li class="nav-item active"><a href="informasi.php" class="nav-link">INFORMASI</a></li>
@@ -76,163 +82,44 @@
 		<div class="overlay">
     </div>
 		<div class="container-fluid">
-    		<div class="row" style="padding-top: 13rem">
-          <div class="col-sm col-md-6 col-lg ftco-animate">
-            <div class="destination">
-              <a
-                href="#"
-                class="img img-2 d-flex justify-content-center align-items-center"
-                style="background-image: url(images/destination-1.jpg); border-radius: 20px;"
-              >
-                <div
-                  class="icon d-flex justify-content-center align-items-center"
-                >
-                  <span class="icon-search2"></span>
-                </div>
-              </a>
-              <div class="text p-3">
-                <div class="d-flex">
-                  <div class="one">
-                    <h3><a href="#">Ekowisata Mangrove</a></h3>
-                  </div>
-                </div>
-                <p>
-                  Far far away, behind the word mountains, far from the
-                  countries
-                </p>
-                <hr />
-                <p class="bottom-area d-flex">
-                  <span><i class="icon-map-o"></i> Merjosari, Surabaya</span>
-                  <span class="ml-auto"><a href="#">Kunjungi</a></span>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm col-md-6 col-lg ftco-animate">
-            <div class="destination">
-              <a
-                href="#"
-                class="img img-2 d-flex justify-content-center align-items-center"
-                style="background-image: url(images/destination-2.jpg); border-radius: 20px;"
-              >
-                <div
-                  class="icon d-flex justify-content-center align-items-center"
-                >
-                  <span class="icon-search2"></span>
-                </div>
-              </a>
-              <div class="text p-3">
-                <div class="d-flex">
-                  <div class="one">
-                    <h3><a href="#">Kenpark</a></h3>
-                  </div>
-                </div>
-                <p>
-                  Far far away, behind the word mountains, far from the
-                  countries
-                </p>
-                <hr />
-                <p class="bottom-area d-flex">
-                  <span><i class="icon-map-o"></i> San Franciso, CA</span>
-                  <span class="ml-auto"><a href="#">Kunjungi</a></span>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm col-md-6 col-lg ftco-animate">
-            <div class="destination">
-              <a
-                href="#"
-                class="img img-2 d-flex justify-content-center align-items-center"
-                style="background-image: url(images/destination-3.jpg); border-radius: 20px;"
-              >
-                <div
-                  class="icon d-flex justify-content-center align-items-center"
-                >
-                  <span class="icon-search2"></span>
-                </div>
-              </a>
-              <div class="text p-3">
-                <div class="d-flex">
-                  <div class="one">
-                    <h3><a href="#">Hutan Bambu Keputih</a></h3>
-                  </div>
-                </div>
-                <p>
-                  Far far away, behind the word mountains, far from the
-                  countries
-                </p>
-                <hr />
-                <p class="bottom-area d-flex">
-                  <span><i class="icon-map-o"></i> San Franciso, CA</span>
-                  <span class="ml-auto"><a href="#">Kunjungi</a></span>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm col-md-6 col-lg ftco-animate">
-            <div class="destination">
-              <a
-                href="#"
-                class="img img-2 d-flex justify-content-center align-items-center"
-                style="background-image: url(images/destination-4.jpg); border-radius: 20px;"
-              >
-                <div
-                  class="icon d-flex justify-content-center align-items-center"
-                >
-                  <span class="icon-search2"></span>
-                </div>
-              </a>
-              <div class="text p-3">
-                <div class="d-flex">
-                  <div class="one">
-                    <h3><a href="#">Wisata Keluarga</a></h3>
-                  </div>
-                </div>
-                <p>
-                  Far far away, behind the word mountains, far from the
-                  countries
-                </p>
-                <hr />
-                <p class="bottom-area d-flex">
-                  <span><i class="icon-map-o"></i> San Franciso, CA</span>
-                  <span class="ml-auto"><a href="#">Kunjungi</a></span>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm col-md-6 col-lg ftco-animate">
-            <div class="destination">
-              <a
-                href="#"
-                class="img img-2 d-flex justify-content-center align-items-center"
-                style="background-image: url(images/destination-5.jpg); border-radius: 20px;"
-              >
-                <div
-                  class="icon d-flex justify-content-center align-items-center"
-                >
-                  <span class="icon-search2"></span>
-                </div>
-              </a>
-              <div class="text p-3">
-                <div class="d-flex">
-                  <div class="one">
-                    <h3><a href="#">Pusat Oleh-oleh</a></h3>
-                  </div>
-                </div>
-                <p>
-                  Far far away, behind the word mountains, far from the
-                  countries
-                </p>
-                <hr />
-                <p class="bottom-area d-flex">
-                  <span><i class="icon-map-o"></i> San Franciso, CA</span>
-                  <span class="ml-auto"><a href="#">Kunjungi</a></span>
-                </p>
-              </div>
-            </div>
+		<div class="row justify-content-start mb-5 pb-3">
+          <div class="col-md-7 heading-section ftco-animate">
+            <h2 class="mb-4" style="padding-top: 15rem; padding-left: 15rem; color:aliceblue"><strong>Wisata</strong> Alam</h2>
           </div>
         </div>
+    		<div class="row">
+        <?php foreach( $alam as $row ) : ?>
+			<div class="col-md-6 col-lg-4 ftco-animate">
+            <div class="destination">
+              <a
+                class="img img-2 d-flex justify-content-center align-items-center"
+                style="background-image: url(images/destination-1.jpg); border-radius: 20px;"
+				href="detail_wisata.php"
+              >
+                <div
+                  class="icon d-flex justify-content-center align-items-center"
+                >
+                  <span class="icon-search2"></span>
+                </div>
+              </a>
+              <div class="text p-3">
+                <div class="d-flex">
+                  <div class="one">
+                    <h3><?= $row["nama_wisata"]; ?></h3>
+                  </div>
+                </div>
+                <p>
+                  <?= $row["detail_alam"]; ?>
+                </p>
+                <p class="bottom-area d-flex">
+                  <span><i class="icon-map-o"></i> ppp </span>
+                  <span class="ml-auto"><a href="detail_wisata.php">Kunjungi</a></span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <?php endforeach; ?>
+
 			<div class="row" style="padding-top: 2rem;">
 				<div class="col-sm-12 col-md-6 col-lg-6">
 					<img src="images/destination-1.jpg" style="width: 100%; height: 50vh;">

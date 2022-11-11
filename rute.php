@@ -83,11 +83,11 @@
             class="dropdown-menu dropdown-menu-dark"
             aria-labelledby="navbarDarkDropdownMenuLink"
           >
-          <li><a class="dropdown-item" href="alam.php">Wisata Alam</a></li>
-          <li><a class="dropdown-item" href="alam.php">Wisata Religi</a></li>
-          <li><a class="dropdown-item" href="alam.php">Wisata Sejarah</a></li>
-          <li><a class="dropdown-item" href="alam.php">Wisata Keluarga</a></li>
-          <li><a class="dropdown-item" href="alam.php">Wisata Kuliner</a></li>
+              <li><a class="dropdown-item" href="alam.php">Wisata Alam</a></li>
+              <li><a class="dropdown-item" href="religi.php">Wisata Religi</a></li>
+              <li><a class="dropdown-item" href="sejarah.php">Wisata Sejarah</a></li>
+              <li><a class="dropdown-item" href="keluarga.php">Wisata Keluarga</a></li>
+              <li><a class="dropdown-item" href="oleholeh.php">Pusat Oleh-oleh</a></li>
           </ul>
         </li> 
         <li class="nav-item">
@@ -137,12 +137,11 @@
           </div>
         </div>
 
-        <div class="row no-gutters slider-text justify-content-center">
+        <div class="row">
           <div id="map" class="map ftco-animate"></div>
         </div>
       </div>
     </div>
-
     <!-- loader -->
     <div id="ftco-loader" class="show fullscreen">
       <svg class="circular" width="48px" height="48px">

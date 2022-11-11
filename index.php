@@ -1,3 +1,9 @@
+<?php 
+
+// koneksi ke database
+$conn = mysqli_connect("localhost", "root", "", "wisata");
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -81,10 +87,10 @@
                   aria-labelledby="navbarDarkDropdownMenuLink"
                 >
                 <li><a class="dropdown-item" href="alam.php">Wisata Alam</a></li>
-                <li><a class="dropdown-item" href="alam.php">Wisata Religi</a></li>
-                <li><a class="dropdown-item" href="alam.php">Wisata Sejarah</a></li>
-                <li><a class="dropdown-item" href="alam.php">Wisata Keluarga</a></li>
-                <li><a class="dropdown-item" href="alam.php">Wisata Kuliner</a></li>
+              <li><a class="dropdown-item" href="religi.php">Wisata Religi</a></li>
+              <li><a class="dropdown-item" href="sejarah.php">Wisata Sejarah</a></li>
+              <li><a class="dropdown-item" href="keluarga.php">Wisata Keluarga</a></li>
+              <li><a class="dropdown-item" href="oleholeh.php">Pusat Oleh-oleh</a></li>>
                 </ul>
               </li>
             <li class="nav-item">
