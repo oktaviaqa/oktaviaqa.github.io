@@ -110,14 +110,14 @@ $conn = mysqli_connect("localhost", "root", "", "wisata");
 
     <div
       class="hero-wrap"
-      style="background-image: url('images/bg_1.jpg'); height: 70vh;"
-    >
+      style="background-image: url('images/bg_1.jpg'); 
+      height: 70vh;"> 
       <div class="overlay"></div>
       <div class="container">
         <div
           class="row no-gutters slider-text align-items-start justify-content-start"
           data-scrollax-parent="true"
-          style="padding-top: 15rem;"
+          style="padding-top: 20rem;"
         >
           <div
             class="col-md-9 ftco-animate"
@@ -136,34 +136,77 @@ $conn = mysqli_connect("localhost", "root", "", "wisata");
                    viewBox="0 0 16 16">
                     <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
                   </svg> -->
-                  <div class="textfield-search one-third">
+                  <div class="textfield-search one-third"
+                  style=" display: flex; align-items: center; padding-left: 16px;">
+                  <i class="fa-sharp fa-solid fa-map-pin" 
+                  style=" color: black;
+                          font-size: 15px;
+                          padding: 6px 5px 8px 3px;">
+                  </i>
+                    <div>
+                      <h1 style="
+                      color: black;
+                      font-size: 12px;
+                      position: absolute;
+                      font-weight: bold;
+                      padding: 16px 7px 7px 7px;">Dimana</h1>
                     <input
+                    id="input-place"
+                      style="padding: 15px 0px 0px 6px;"
                       type="text"
                       class="form-control"
-                      placeholder="Dimana"
+                      placeholder="Lokasi anda ?"
                     />
+                    </div>
                   </div>
-                  <div class="select-wrap one-third">
+
+                  <div class="select-wrap one-third"
+                  style="     display: flex; align-items: center; padding-left: 16px;">
+                  <i class="fa-solid fa-map-location-dot" 
+                  style=" color: black;
+                          font-size: 15px;
+                          padding: 6px 5px 8px 3px;">
+                  </i>
                     <div class="icon">
                       <span class="ion-ios-arrow-down"></span>
                     </div>
+                    <div>
+                      <h1 style="
+                      color: black;
+                      font-size: 12px;
+                      position: absolute;
+                      font-weight: bold;
+                      padding: 16px 7px 7px 7px;">Kemana</h1>
                     <select
+                      style="padding: 15px 0px 0px 6px;"
                       name=""
                       id=""
                       class="form-control"
                       placeholder="Keyword search"
                     >
-                      <option value="">Where</option>
-                      <option value="">HMMM APA SIH</option>
-                      <option value="">Berlin Germany</option>
-                      <option value="">Lodon United Kingdom</option>
-                      <option value="">Paris Italy</option>
+                      <option value="">Tujuan Anda</option>
+                      <option value="">Ekowisata Mangrove</option>
+                      <option value="">Kenpark Surabaya</option>
+                      <option value="">Masjid Sunan Ampel</option>
+                      <option value="">Masjid Al-akbar Surabaya</option>
+                      <option value="">Masjid Muhammad Cheng Hoo</option>
+                      <option value="">Museum Pendidikan</option>
+                      <option value="">Museum Perjuangan 10 Nopember</option>
+                      <option value="">Monumen Kapal Selam</option>
+                      <option value="">Museum House Of Sampoerna</option>
+                      <option value="">Hutan Bambu Keputih</option>
+                      <option value="">Taman Bungkul</option>
+                      <option value="">Kebun Binatang Surabaya</option>
+                      <option value="">Pasar Atom </option>
+                      <option value="">Pasar Turi</option>
+                      <option value="">Depot Bu Rudy</option>
                     </select>
+                    </div>
                   </div>
                 </div>
                 <input
                   type="submit"
-                  class="search-submit btn btn-primary"
+                  class="search-submit btn btn-danger"
                   value="Search"
                 />
               </form>
@@ -1503,7 +1546,7 @@ $conn = mysqli_connect("localhost", "root", "", "wisata");
     <script src="js/bootstrap-datepicker.js"></script>
     <script src="js/jquery.timepicker.min.js"></script>
     <script src="js/scrollax.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0fLolW_4p0Z-7iQoOzc6ia-1AQ0OrVDc&libraries=places"></script>
     <script src="js/google-map.js"></script>
     <script src="js/main.js"></script>
   </body>

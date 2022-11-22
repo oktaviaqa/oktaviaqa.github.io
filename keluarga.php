@@ -78,13 +78,13 @@ $keluarga = query("SELECT * FROM db_keluarga");;
 		</div>
 	</nav>
 	<!-- END nav -->
-	<div class="hero-wrap" style="background-image: url('images/bg_1.jpg');height: 50vh;">
+	<div class="hero-wrap" style="background-image: url('images/keluarga/bg-keluarga.jpg');height: 50vh;">
 		<div class="overlay">
     </div>
 		<div class="container-fluid">
 		<div class="row justify-content-start mb-5 pb-3">
           <div class="col-md-7 heading-section ftco-animate">
-            <h2 class="mb-4" style="padding-top: 15rem; padding-left: 15rem; color:aliceblue""><strong>Wisata</strong> Keluarga</h2>
+            <h2 class="mb-4" style="padding-top: 10rem; padding-left: 15rem; color:aliceblue""><strong>Wisata</strong> Keluarga</h2>
           </div>
         </div>
     		<div class="row">

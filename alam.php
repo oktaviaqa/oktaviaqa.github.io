@@ -1,6 +1,6 @@
 <?php 
 require 'functions.php';
-$alam = query("SELECT * FROM db_alam");;
+$alam = query("SELECT * FROM menu_wisata WHERE kategori='alam'");
 
 ?> 
 
@@ -78,13 +78,15 @@ $alam = query("SELECT * FROM db_alam");;
 		</div>
 	</nav>
 	<!-- END nav -->
-	<div class="hero-wrap" style="background-image: url('images/bg_1.jpg');height: 50vh;">
+	<div class="hero-wrap" style="background-image: url('images/alam/bg_alam.jpg');height: 50vh;">
 		<div class="overlay">
     </div>
-		<div class="container-fluid">
+		<div class="container">
 		<div class="row justify-content-start mb-5 pb-3">
           <div class="col-md-7 heading-section ftco-animate">
-            <h2 class="mb-4" style="padding-top: 15rem; padding-left: 15rem; color:aliceblue"><strong>Wisata</strong> Alam</h2>
+            <h2 class="mb-4" style="padding-top: 10rem; padding-left: 0; color:aliceblue"">
+			<span style="font-size: 14px;"><a href="index.php">Home </a> / Wisata Alam</span> <br/>
+			<strong>Wisata</strong> Alam</h2>">
           </div>
         </div>
     		<div class="row">
@@ -102,14 +104,14 @@ $alam = query("SELECT * FROM db_alam");;
                   <span class="icon-search2"></span>
                 </div>
               </a>
-              <div class="text p-3">
+              <div class="text p-3" style="height: 300px;">
                 <div class="d-flex">
                   <div class="one">
                     <h3><?= $row["nama_wisata"]; ?></h3>
                   </div>
                 </div>
                 <p>
-                  <?= $row["detail_alam"]; ?>
+                  <?= substr($row["informasi"],0,210);  ?>
                 </p>
                 <p class="bottom-area d-flex">
                   <span><i class="icon-map-o"></i> ppp </span>
@@ -155,8 +157,7 @@ $alam = query("SELECT * FROM db_alam");;
 	<script src="js/bootstrap-datepicker.js"></script>
 	<script src="js/jquery.timepicker.min.js"></script>
 	<script src="js/scrollax.min.js"></script>
-	<script
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0fLolW_4p0Z-7iQoOzc6ia-1AQ0OrVDc&libraries=places&sensor=false"></script>
 	<script src="js/google-map.js"></script>
 	<script src="js/main.js"></script>
 

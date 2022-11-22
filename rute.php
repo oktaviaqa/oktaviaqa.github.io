@@ -121,6 +121,7 @@
                 <div class="fields d-flex">
                   <div class="rute textfield-search one-third">
                     <input
+                      id="input-place"
                       type="text"
                       class="form-control"
                       placeholder="Pilih Tujuan"
@@ -181,7 +182,7 @@
     <script src="js/bootstrap-datepicker.js"></script>
     <script src="js/jquery.timepicker.min.js"></script>
     <script src="js/scrollax.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0fLolW_4p0Z-7iQoOzc6ia-1AQ0OrVDc&libraries=places"></script>
     <script src="js/google-map.js"></script>
     <script src="js/main.js"></script>
   </body>
